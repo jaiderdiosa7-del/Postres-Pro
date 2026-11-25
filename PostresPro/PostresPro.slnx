@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="PostresPro.Datos/PostresPro.Datos.csproj" />
+  <Project Path="PostresPro.Escritorio/PostresPro.Escritorio.csproj" />
+  <Project Path="PostresPro.Modelos/PostresPro.Modelos.csproj" />
+  <Project Path="PostresPro.Servicios/PostresPro.Servicios.csproj" />
+</Solution>
