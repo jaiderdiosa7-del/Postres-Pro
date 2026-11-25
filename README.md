@@ -8,7 +8,7 @@ Aplicación de escritorio para gestionar clientes y pedidos de postres
 
 **Integrantes y roles:**
 - **Jaider Diosa:** Líder técnico y encargado del módulo de Clientes.
-- **Diego Sepúlveda:** Encargado del módulo de Pedidos.
+- **Julian Gómez:** Encargado del módulo de Pedidos.
 
 Ambos participaremos en la integración del proyecto, la base de datos, las pruebas y la documentación.
 
@@ -35,7 +35,7 @@ Permitirá registrar, consultar, editar y eliminar clientes, además de gestiona
 - `ClienteServicio.cs`: lógica para gestionar los clientes.
 - `FormClientes.cs`: formulario para registrar, consultar, editar y eliminar clientes.
 
-**Diego Sepúlveda:**
+**Julian Gómez:**
 - `Pedido.cs`: clase que representa los pedidos.
 - `PedidoServicio.cs`: lógica para gestionar los pedidos.
 - `FormPedidos.cs`: formulario para registrar y administrar los pedidos.
