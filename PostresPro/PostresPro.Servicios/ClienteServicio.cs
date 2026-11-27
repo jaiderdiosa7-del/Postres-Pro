@@ -106,11 +106,24 @@ namespace PostresPro.Servicios
         }
 
 
-        public void Eliminar(int id)
+        public string? Eliminar(int id)
         {
-            repositorio.Eliminar(id);
-        }
+            Cliente? cliente = repositorio.Buscar(id);
 
+            if (cliente == null)
+            {
+                return "El cliente no existe.";
+            }
+
+            if (cliente.Pedidos.Any())
+            {
+                return "No se puede eliminar este cliente porque tiene pedidos asociados.";
+            }
+
+            repositorio.Eliminar(id);
+
+            return null;
+        }
 
     }
 }

@@ -39,6 +39,8 @@
             btnModificar = new Button();
             btnEliminar = new Button();
             dgvClientes = new DataGridView();
+            lblEstado = new Label();
+            cmbEstado = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dgvClientes).BeginInit();
             SuspendLayout();
             // 
@@ -132,6 +134,7 @@
             btnEliminar.TabIndex = 9;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = false;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // dgvClientes
             // 
@@ -146,12 +149,33 @@
             dgvClientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvClientes.Size = new Size(772, 225);
             dgvClientes.TabIndex = 10;
+            dgvClientes.CellClick += dgvClientes_CellClick;
+            // 
+            // lblEstado
+            // 
+            lblEstado.AutoSize = true;
+            lblEstado.Location = new Point(433, 89);
+            lblEstado.Name = "lblEstado";
+            lblEstado.Size = new Size(66, 25);
+            lblEstado.TabIndex = 11;
+            lblEstado.Text = "Estado";
+            // 
+            // cmbEstado
+            // 
+            cmbEstado.FormattingEnabled = true;
+            cmbEstado.Items.AddRange(new object[] { "Activo", "Inactivo" });
+            cmbEstado.Location = new Point(546, 89);
+            cmbEstado.Name = "cmbEstado";
+            cmbEstado.Size = new Size(182, 33);
+            cmbEstado.TabIndex = 12;
             // 
             // FormClientes
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(878, 544);
+            Controls.Add(cmbEstado);
+            Controls.Add(lblEstado);
             Controls.Add(dgvClientes);
             Controls.Add(btnEliminar);
             Controls.Add(btnModificar);
@@ -184,5 +208,7 @@
         private Button btnModificar;
         private Button btnEliminar;
         private DataGridView dgvClientes;
+        private Label lblEstado;
+        private ComboBox cmbEstado;
     }
 }

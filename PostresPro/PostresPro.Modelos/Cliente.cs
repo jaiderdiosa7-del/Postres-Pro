@@ -10,6 +10,7 @@ namespace PostresPro.Modelos
         public string Nombre { get; set; } = "";
         public string Telefono { get; set; } = "";
         public string Correo { get; set; } = "";
+        public bool Activo { get; set; } = true;
 
 
         public List<Pedido> Pedidos { get; set; } = new List<Pedido>();
